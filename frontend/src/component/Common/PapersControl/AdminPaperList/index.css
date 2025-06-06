@@ -1,0 +1,44 @@
+/* AdminPaperList.css */
+.admin-paper-list-container {
+    margin-top: 20px; /* 上方间距 */
+    padding: 20px; /* 内边距 */
+    background-color: #f8f9fa; /* 背景颜色 */
+    border-radius: 8px; /* 圆角边框 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+.admin-paper-list-table {
+    width: 100%; /* 全宽表格 */
+    margin-bottom: 0; /* 去除底部多余间距 */
+    font-size: 0.9rem; /* 调整字体大小 */
+}
+
+.admin-paper-list-table th {
+    background-color: #343a40; /* 表头背景色 */
+    color: #ffffff; /* 表头文字颜色 */
+    text-align: center; /* 表头文字居中 */
+    padding: 10px; /* 内边距 */
+}
+
+.admin-paper-list-table td {
+    vertical-align: middle; /* 表格文字垂直居中 */
+    padding: 10px; /* 单元格内边距 */
+}
+
+.admin-paper-list-table td button {
+    margin-right: 5px; /* 按钮之间的间距 */
+}
+
+.admin-paper-list-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* 隔行变色 */
+}
+
+.admin-paper-list-table tr:hover {
+    background-color: #e9ecef; /* 鼠标悬停行高亮 */
+}
+
+.admin-paper-list-actions {
+    display: flex; /* 按钮排列方式 */
+    justify-content: center; /* 居中排列 */
+    gap: 10px; /* 按钮之间的间距 */
+}

@@ -1,0 +1,72 @@
+/* 日志列表容器 */
+.logs-list-container {
+    padding: 20px;
+    background-color: #f8f9fa; /* 背景色 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    margin: 20px 0;
+}
+
+/* 表头 */
+.logs-list-container th {
+    background-color: #343a40; /* 深灰色背景 */
+    color: white; /* 白色文字 */
+    padding: 12px 15px; /* 上下左右内边距 */
+    text-align: center; /* 内容居中对齐 */
+    position: sticky;  /* 让表头固定 */
+    top: 0;            /* 设置顶部位置为0 */
+    z-index: 1;        /* 设置z-index确保表头在内容上方 */
+}
+
+/* 表格数据单元格 */
+.logs-list-container td {
+    padding: 12px 15px; /* 上下左右内边距 */
+    border-bottom: 1px solid #ddd; /* 行分隔线 */
+    text-align: center; /* 内容居中对齐 */
+}
+
+/* 行悬停效果 */
+.logs-list-container tr:hover {
+    background-color: #f1f1f1; /* 鼠标悬停时的背景色变化 */
+}
+
+/* 按钮组 */
+.logs-list-container .action-buttons {
+    display: flex;
+    justify-content: center; /* 按钮水平居中 */
+    gap: 10px; /* 按钮间隔 */
+}
+
+/* 操作按钮 */
+.logs-list-container .action-buttons button {
+    padding: 6px 12px; /* 按钮内边距 */
+    font-size: 0.9rem; /* 按钮字体大小 */
+    cursor: pointer; /* 鼠标变为手形 */
+}
+
+/* 标记为已归还按钮 */
+.logs-list-container .action-buttons .btn-warning {
+    background-color: #ffc107; /* 黄色背景 */
+    color: white; /* 白色文字 */
+}
+
+.logs-list-container .action-buttons .btn-warning:hover {
+    background-color: #e0a800; /* 悬停时背景色 */
+}
+
+/* 删除按钮 */
+.logs-list-container .action-buttons .btn-danger {
+    background-color: #dc3545; /* 红色背景 */
+    color: white; /* 白色文字 */
+}
+
+.logs-list-container .action-buttons .btn-danger:hover {
+    background-color: #c82333; /* 悬停时背景色 */
+}
+
+/* 日志列表容器 */
+.logs-table-container {
+    max-height: 500px; /* 设置最大高度 */
+    overflow-y: auto; /* 启用垂直滚动 */
+    margin-top: 20px;
+}

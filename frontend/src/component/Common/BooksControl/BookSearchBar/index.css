@@ -1,0 +1,45 @@
+/* BookSearchBar.css */
+
+/* 搜索栏外容器 */
+.book-search-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 使输入框和选择框分开 */
+    background-color: #f8f9fa; /* 浅灰色背景 */
+    padding: 10px 20px; /* 内边距 */
+    border-radius: 8px; /* 圆角边框 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    margin-bottom: 20px; /* 下边距 */
+}
+
+/* 下拉选择框样式 */
+.book-search-select {
+    width: 200px;
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 5px; /* 圆角边框 */
+    border: 1px solid #ced4da; /* 边框颜色 */
+}
+
+/* 查询输入框样式 */
+.book-search-input {
+    flex: 1; /* 输入框宽度占满剩余空间 */
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 5px; /* 圆角边框 */
+    border: 1px solid #ced4da; /* 边框颜色 */
+}
+
+/* 按钮样式 */
+.book-search-button {
+    background-color: #007bff; /* 蓝色背景 */
+    color: #fff; /* 白色文字 */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.book-search-button:hover {
+    background-color: #0056b3; /* 鼠标悬停时变为深蓝色 */
+}

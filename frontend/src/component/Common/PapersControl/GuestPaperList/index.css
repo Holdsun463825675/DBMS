@@ -1,0 +1,40 @@
+/* GuestPaperList.css */
+
+/* 表格外层容器 */
+.guest-paper-list-container {
+    margin: 20px auto; /* 设置外边距 */
+    padding: 15px; /* 设置内边距 */
+    max-width: 1000px; /* 限制最大宽度 */
+    background-color: #f9f9f9; /* 设置背景颜色 */
+    border-radius: 8px; /* 圆角边框 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    overflow-x: auto; /* 允许横向滚动 */
+}
+
+/* 表格样式 */
+.guest-paper-list-container table {
+    width: 100%; /* 表格宽度占满容器 */
+    border-collapse: collapse; /* 去掉单元格间的间隙 */
+    margin: 10px 0;
+}
+
+.guest-paper-list-container th, .guest-paper-list-container td {
+    padding: 10px; /* 单元格内边距 */
+    text-align: center; /* 文本居中 */
+    vertical-align: middle; /* 垂直居中 */
+    font-size: 0.9rem; /* 字体大小 */
+}
+
+.guest-paper-list-container th {
+    background-color: #6c757d; /* 表头背景色 */
+    color: white; /* 表头字体颜色 */
+}
+
+.guest-paper-list-container tr:nth-child(even) {
+    background-color: #f2f2f2; /* 偶数行背景颜色 */
+}
+
+.guest-paper-list-container tr:hover {
+    background-color: #e2e6ea; /* 鼠标悬停行背景颜色 */
+    transition: background-color 0.2s ease-in-out;
+}

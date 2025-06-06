@@ -1,0 +1,90 @@
+/* 书籍列表容器 */
+.user-book-list-container {
+    padding: 20px; /* 内边距 */
+    margin: 20px auto; /* 居中布局 */
+    max-width: 2000px; /* 最大宽度 */
+    background-color: #f8f9fa; /* 浅灰色背景 */
+    border-radius: 10px; /* 圆角边框 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+/* 表格容器，设置最大高度并启用垂直滚动 */
+.user-book-table-container {
+    max-height: 500px; /* 限制表格的最大高度 */
+    overflow-y: auto; /* 启用垂直滚动 */
+}
+
+/* 表格样式 */
+.user-book-list-table {
+    width: 100%; /* 占满父容器宽度 */
+    border-collapse: collapse; /* 合并边框 */
+    text-align: center; /* 文本居中对齐 */
+}
+
+/* 表头样式 */
+.user-book-list-table thead {
+    background-color: #343a40; /* 深灰色背景 */
+    color: #ffffff; /* 白色字体 */
+}
+
+/* 表头单元格 */
+.user-book-list-table th {
+    padding: 12px 15px; /* 上下左右内边距 */
+    font-size: 1rem; /* 字体大小 */
+    position: sticky;  /* 让表头固定 */
+    top: 0;            /* 设置顶部位置为0 */
+    z-index: 1;        /* 设置z-index确保表头在内容上方 */
+}
+
+/* 表格数据单元格 */
+.user-book-list-table td {
+    padding: 12px 15px; /* 上下左右内边距 */
+    font-size: 0.95rem; /* 字体大小 */
+    border-bottom: 1px solid #ddd; /* 分隔线 */
+}
+
+/* 鼠标悬停时，表格行的背景色变化 */
+.user-book-list-table tbody tr:hover {
+    background-color: #f1f1f1; /* 背景色变化 */
+}
+
+/* 操作按钮 */
+.user-book-list-table button {
+    padding: 6px 12px; /* 按钮内边距 */
+    font-size: 0.9rem; /* 字体大小 */
+    cursor: pointer; /* 鼠标变为手形 */
+}
+
+/* 提高按钮的可见性 */
+.user-book-list-table button:focus {
+    outline: none; /* 去掉按钮点击时的边框 */
+}
+
+/* 按钮组 */
+.user-book-list-table .button-group {
+    display: flex;
+    gap: 10px; /* 按钮之间的间距 */
+    justify-content: center; /* 水平居中对齐 */
+}
+
+/* 借阅按钮样式 */
+.user-book-list-table .borrow-button {
+    background-color: #28a745; /* 绿色背景 */
+    color: white; /* 白色字体 */
+    border: none; /* 去掉边框 */
+}
+
+.user-book-list-table .borrow-button:hover {
+    background-color: #218838; /* 悬停时的深绿色 */
+}
+
+/* 归还按钮样式 */
+.user-book-list-table .return-button {
+    background-color: #007bff; /* 蓝色背景 */
+    color: white; /* 白色字体 */
+    border: none; /* 去掉边框 */
+}
+
+.user-book-list-table .return-button:hover {
+    background-color: #0056b3; /* 悬停时的深蓝色 */
+}

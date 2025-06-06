@@ -1,0 +1,84 @@
+.statistics-container {
+    padding: 20px;
+    position: relative;
+}
+
+/* 返回按钮 */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+}
+
+/* 标题 */
+.statistics-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+/* 左侧统计类型选择 - 占满整个左侧 */
+.type-selection {
+    background-color: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.type-button {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* 上方统计范围选择 - 横向占满 */
+.category-selection {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+/* 右侧日期范围选择 - 增大 */
+.date-range-selection {
+    margin-top: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.date-range-selection .dropdown-toggle {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+/* 内容区域 - 横向排列，增加间距 */
+.content-row {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 表格和统计图容器 */
+.table-container,
+.chart-container {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%; /* 每个容器占据一半宽度，留出间距 */
+}
+
+.table-placeholder,
+.chart-placeholder {
+    font-size: 18px;
+    color: #666;
+}

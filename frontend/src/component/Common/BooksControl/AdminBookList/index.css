@@ -1,0 +1,49 @@
+/* AdminBookList.css */
+
+/* 整体容器样式 */
+.admin-book-list {
+    max-height: 500px; /* 设置表格最大高度 */
+    overflow-y: auto; /* 启用垂直滚动 */
+    border: 1px solid #ddd; /* 边框 */
+    border-radius: 8px; /* 圆角 */
+    padding: 10px; /* 内边距 */
+    background-color: #ffffff; /* 背景颜色 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+/* 表格样式（与之前保持一致） */
+.admin-book-list table {
+    margin: 0; /* 移除表格默认外边距 */
+    width: 100%; /* 表格宽度填满容器 */
+    border-collapse: collapse; /* 合并表格边框 */
+}
+
+.admin-book-list thead th {
+    background-color: #007bff; /* 蓝色背景 */
+    color: #ffffff; /* 白色文字 */
+    text-align: center; /* 居中对齐 */
+    font-weight: bold; /* 加粗字体 */
+    position: sticky;  /* 让表头固定 */
+    top: 0;            /* 设置顶部位置为0 */
+    z-index: 1;        /* 设置z-index确保表头在内容上方 */
+}
+
+.admin-book-list tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* 浅灰色背景 */
+}
+
+.admin-book-list tbody tr:nth-child(even) {
+    background-color: #ffffff; /* 白色背景 */
+}
+
+.admin-book-list tbody td {
+    text-align: center; /* 单元格居中对齐 */
+    vertical-align: middle; /* 垂直居中 */
+}
+
+.admin-book-list button {
+    font-size: 0.9rem; /* 调整按钮文字大小 */
+    padding: 5px 10px; /* 内边距 */
+    border-radius: 4px; /* 圆角按钮 */
+}
+

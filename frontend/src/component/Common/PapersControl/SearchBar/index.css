@@ -1,0 +1,39 @@
+/* SearchBar.css */
+.search-bar-container {
+    max-width: 800px; /* 限制搜索栏宽度 */
+    margin: 20px auto; /* 居中 */
+    padding: 10px; /* 内边距 */
+    background-color: #f8f9fa; /* 背景颜色 */
+    border-radius: 8px; /* 圆角 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    gap: 10px; /* 元素间距 */
+}
+
+.search-bar-container .form-select {
+    width: 150px; /* 固定宽度 */
+    font-size: 0.9rem; /* 字体大小 */
+    border-radius: 4px; /* 圆角 */
+    padding: 6px; /* 内边距 */
+}
+
+.search-bar-container .form-control {
+    flex-grow: 1; /* 占据剩余空间 */
+    border-radius: 4px; /* 圆角 */
+    padding: 8px; /* 内边距 */
+    font-size: 0.9rem; /* 字体大小 */
+}
+
+.search-bar-container .btn {
+    font-size: 0.9rem; /* 按钮字体大小 */
+    padding: 6px 12px; /* 按钮内边距 */
+    border-radius: 4px; /* 按钮圆角 */
+    background-color: #007bff; /* 按钮背景颜色 */
+    color: #fff; /* 按钮字体颜色 */
+    border: none; /* 去掉边框 */
+}
+
+.search-bar-container .btn:hover {
+    background-color: #0056b3; /* 按钮悬停颜色 */
+}

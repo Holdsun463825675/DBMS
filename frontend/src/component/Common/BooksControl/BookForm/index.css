@@ -1,0 +1,83 @@
+/* BookForm.css */
+
+/* 表单整体容器 */
+.book-form-container {
+    background-color: #ffffff; /* 白色背景 */
+    padding: 20px; /* 内边距 */
+    border-radius: 10px; /* 圆角边框 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    max-width: 600px; /* 最大宽度 */
+    margin: 20px auto; /* 居中显示 */
+}
+
+/* 每个表单字段间的间距 */
+.book-form-container .form-group {
+    margin-bottom: 15px; /* 字段间距 */
+}
+
+/* 输入框的样式 */
+.book-form-container .form-control {
+    border-radius: 5px; /* 圆角边框 */
+    border: 1px solid #ccc; /* 浅灰色边框 */
+    padding: 10px; /* 内边距 */
+}
+
+/* 下拉框的样式 */
+.book-form-container .form-select {
+    border-radius: 5px; /* 圆角边框 */
+    border: 1px solid #ccc; /* 浅灰色边框 */
+    padding: 10px; /* 内边距 */
+}
+
+/* 标签样式 */
+.book-form-container .form-label {
+    font-weight: 600; /* 加粗字体 */
+    color: #495057; /* 深灰色文字 */
+    margin-bottom: 5px; /* 标签与输入框的间距 */
+    display: block; /* 标签为块级元素 */
+}
+
+/* 保存和取消按钮的容器 */
+.book-form-container .form-buttons {
+    display: flex;
+    justify-content: space-between; /* 按钮两端对齐 */
+    margin-top: 20px; /* 上边距 */
+}
+
+/* 保存按钮样式 */
+.book-form-container .btn-primary {
+    background-color: #007bff; /* 蓝色背景 */
+    border-color: #007bff; /* 蓝色边框 */
+    color: #ffffff; /* 白色文字 */
+    font-size: 1rem; /* 字体大小 */
+    padding: 8px 16px; /* 按钮内边距 */
+    border-radius: 5px; /* 圆角边框 */
+}
+
+.book-form-container .btn-primary:hover {
+    background-color: #0056b3; /* 悬停时的背景色 */
+    border-color: #004085; /* 悬停时的边框色 */
+}
+
+/* 取消按钮样式 */
+.book-form-container .btn-secondary {
+    background-color: #6c757d; /* 灰色背景 */
+    border-color: #6c757d; /* 灰色边框 */
+    color: #ffffff; /* 白色文字 */
+    font-size: 1rem; /* 字体大小 */
+    padding: 8px 16px; /* 按钮内边距 */
+    border-radius: 5px; /* 圆角边框 */
+}
+
+.book-form-container .btn-secondary:hover {
+    background-color: #5a6268; /* 悬停时的背景色 */
+    border-color: #4e555b; /* 悬停时的边框色 */
+}
+
+/* 响应式设计：调整小屏幕时的表单宽度 */
+@media (max-width: 768px) {
+    .book-form-container {
+        padding: 15px; /* 内边距 */
+        max-width: 100%; /* 最大宽度为100% */
+    }
+}

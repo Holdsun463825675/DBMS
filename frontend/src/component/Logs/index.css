@@ -1,0 +1,166 @@
+/* 主容器 */
+.logs-container {
+    padding: 20px; /* 内边距 */
+    max-width: 2000px; /* 最大宽度 */
+    margin: 20px auto; /* 居中布局 */
+    background-color: #f8f9fa; /* 背景色 */
+    border-radius: 10px; /* 圆角边框 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+/* 标题 */
+.logs-container h1 {
+    font-size: 2rem; /* 字体大小 */
+    color: #343a40; /* 深灰色 */
+    text-align: center; /* 居中对齐 */
+    margin-bottom: 20px; /* 下边距 */
+}
+
+/* 搜索栏样式 */
+.logs-search-bar {
+    margin-bottom: 20px; /* 下边距 */
+    display: flex;
+    justify-content: space-between; /* 两端对齐 */
+    align-items: center; /* 垂直居中 */
+}
+
+/* 搜索选择框 */
+.logs-search-bar .form-group {
+    width: 30%; /* 限制宽度 */
+}
+
+/* 搜索输入框 */
+.logs-search-bar .form-control {
+    width: 60%; /* 限制宽度 */
+}
+
+/* 日志列表容器 */
+.logs-list-container {
+    max-height: 500px; /* 限制容器的最大高度 */
+    overflow-y: auto; /* 启用垂直滚动条 */
+}
+
+/* 列表项样式 */
+.logs-list-container table {
+    width: 100%; /* 占满父容器 */
+    border-collapse: collapse; /* 合并边框 */
+    text-align: center; /* 表格内容居中对齐 */
+}
+
+/* 表头 */
+.logs-list-container th {
+    background-color: #343a40; /* 深灰色背景 */
+    color: white; /* 白色文字 */
+    padding: 12px 15px; /* 上下左右内边距 */
+}
+
+/* 表格数据单元格 */
+.logs-list-container td {
+    padding: 12px 15px; /* 上下左右内边距 */
+    border-bottom: 1px solid #ddd; /* 表格行分隔线 */
+}
+
+/* 行悬停效果 */
+.logs-list-container tr:hover {
+    background-color: #f1f1f1; /* 鼠标悬停时背景色变化 */
+}
+
+/* 按钮样式 */
+.logs-list-container .action-buttons {
+    display: flex;
+    justify-content: center; /* 按钮水平居中 */
+    gap: 10px; /* 按钮之间的间距 */
+}
+
+/* 操作按钮 */
+.logs-list-container .action-buttons button {
+    padding: 6px 12px; /* 按钮内边距 */
+    font-size: 0.9rem; /* 按钮字体大小 */
+    cursor: pointer; /* 鼠标变为手形 */
+}
+
+/* 操作按钮颜色 */
+.logs-list-container .action-buttons .btn-warning {
+    background-color: #ffc107; /* 黄色背景 */
+    color: white; /* 白色文字 */
+}
+
+.logs-list-container .action-buttons .btn-warning:hover {
+    background-color: #e0a800; /* 悬停时背景色 */
+}
+
+.logs-list-container .action-buttons .btn-danger {
+    background-color: #dc3545; /* 红色背景 */
+    color: white; /* 白色文字 */
+}
+
+.logs-list-container .action-buttons .btn-danger:hover {
+    background-color: #c82333; /* 悬停时背景色 */
+}
+
+/* 搜索框容器 */
+.search-form-container {
+    padding: 20px;
+    background-color: #f8f9fa; /* 背景色 */
+    border-radius: 10px; /* 圆角边框 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    margin-bottom: 20px; /* 下边距 */
+    max-width: 500px;
+}
+
+/* 搜索类型选择框 */
+.search-form-container .form-group {
+    margin-bottom: 15px; /* 下边距 */
+}
+
+/* 搜索类型选择框 */
+.search-form-container .form-control {
+    font-size: 1rem; /* 字体大小 */
+    padding: 10px; /* 内边距 */
+    border-radius: 5px; /* 圆角 */
+    border: 1px solid #ced4da; /* 边框颜色 */
+}
+
+/* 输入框样式 */
+.search-form-container input[type="text"] {
+    width: 100%; /* 填满宽度 */
+    margin-top: 10px; /* 上边距 */
+    padding: 10px; /* 内边距 */
+    font-size: 1rem; /* 字体大小 */
+    border-radius: 5px; /* 圆角 */
+    border: 1px solid #ced4da; /* 边框颜色 */
+}
+
+/* 输入框的焦点效果 */
+.search-form-container input[type="text"]:focus,
+.search-form-container select:focus {
+    border-color: #80bdff; /* 聚焦时边框颜色 */
+    outline: none; /* 去掉默认的聚焦轮廓 */
+}
+
+/* 选择框样式 */
+.search-form-container select {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+/* 选择框的焦点效果 */
+.search-form-container select:focus {
+    border-color: #80bdff;
+    outline: none;
+}
+
+/* 小屏幕时的响应式布局 */
+@media (max-width: 768px) {
+    .search-form-container {
+        padding: 10px;
+    }
+
+    .search-form-container .form-control {
+        font-size: 0.9rem;
+    }
+}

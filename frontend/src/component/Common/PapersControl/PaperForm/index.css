@@ -1,0 +1,68 @@
+/* PaperForm.css */
+.paper-form-container {
+    max-width: 600px; /* 限制表单最大宽度 */
+    margin: 20px auto; /* 垂直居中 */
+    padding: 20px; /* 内边距 */
+    background-color: #f8f9fa; /* 背景色 */
+    border-radius: 8px; /* 圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影 */
+}
+
+.paper-form-container h2 {
+    text-align: center; /* 标题居中 */
+    margin-bottom: 20px; /* 标题下方间距 */
+    color: #343a40; /* 深色标题 */
+}
+
+.paper-form-container .form-group {
+    margin-bottom: 15px; /* 每个表单项的间距 */
+}
+
+.paper-form-container .form-label {
+    font-weight: bold; /* 标签加粗 */
+    margin-bottom: 5px; /* 标签和输入框之间的间距 */
+    display: block; /* 独占一行 */
+}
+
+.paper-form-container .form-control {
+    height: 40px; /* 输入框高度 */
+    font-size: 1rem; /* 字体大小 */
+    border: 1px solid #ced4da; /* 边框颜色 */
+    border-radius: 4px; /* 边框圆角 */
+    padding: 8px; /* 内边距 */
+}
+
+.paper-form-container .form-control:focus {
+    border-color: #80bdff; /* 聚焦时的边框颜色 */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* 聚焦时的阴影 */
+}
+
+.paper-form-container .form-select {
+    height: 40px; /* 下拉框高度 */
+    font-size: 1rem; /* 字体大小 */
+    padding: 8px; /* 内边距 */
+    border-radius: 4px; /* 边框圆角 */
+}
+
+.paper-form-container .btn {
+    padding: 10px 20px; /* 按钮内边距 */
+    font-size: 1rem; /* 按钮字体大小 */
+}
+
+.paper-form-container .btn-primary {
+    background-color: #007bff; /* 主按钮颜色 */
+    border-color: #007bff; /* 主按钮边框 */
+}
+
+.paper-form-container .btn-primary:hover {
+    background-color: #0056b3; /* 主按钮悬停颜色 */
+}
+
+.paper-form-container .btn-secondary {
+    background-color: #6c757d; /* 次按钮颜色 */
+    border-color: #6c757d; /* 次按钮边框 */
+}
+
+.paper-form-container .btn-secondary:hover {
+    background-color: #565e64; /* 次按钮悬停颜色 */
+}

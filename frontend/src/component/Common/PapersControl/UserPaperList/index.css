@@ -1,0 +1,58 @@
+/* UserPaperList.css */
+
+/* 表格整体样式 */
+.user-paper-list-container {
+    margin: 20px auto; /* 居中并增加外边距 */
+    padding: 10px; /* 内边距 */
+    max-width: 1000px; /* 限制最大宽度 */
+    background-color: #f8f9fa; /* 背景颜色 */
+    border-radius: 8px; /* 圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    overflow-x: auto; /* 横向滚动条 */
+}
+
+/* 表格样式 */
+.user-paper-list-container table {
+    width: 100%; /* 表格宽度占满容器 */
+    border-collapse: collapse; /* 去掉单元格间的间隙 */
+    margin: 10px 0;
+}
+
+.user-paper-list-container th, .user-paper-list-container td {
+    padding: 10px; /* 单元格内边距 */
+    text-align: center; /* 文本居中 */
+    vertical-align: middle; /* 垂直居中 */
+    font-size: 0.9rem; /* 字体大小 */
+}
+
+.user-paper-list-container th {
+    background-color: #007bff; /* 表头背景颜色 */
+    color: #fff; /* 表头文字颜色 */
+}
+
+.user-paper-list-container tr:nth-child(even) {
+    background-color: #f2f2f2; /* 偶数行背景色 */
+}
+
+.user-paper-list-container tr:hover {
+    background-color: #e6f7ff; /* 鼠标悬停行背景色 */
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* 按钮样式 */
+.user-paper-list-container .btn {
+    font-size: 0.9rem; /* 按钮字体大小 */
+    padding: 6px 12px; /* 按钮内边距 */
+    border-radius: 4px; /* 按钮圆角 */
+    transition: background-color 0.2s ease-in-out;
+}
+
+.user-paper-list-container .btn-info {
+    background-color: #17a2b8; /* 下载按钮背景色 */
+    border-color: #17a2b8;
+}
+
+.user-paper-list-container .btn-info:hover {
+    background-color: #138496; /* 悬停时的颜色 */
+    border-color: #117a8b;
+}
